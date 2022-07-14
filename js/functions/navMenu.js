@@ -19,5 +19,20 @@ export function navMenu () {
      navLink.forEach(x => {
         x.addEventListener('click', linkClick)
      }); 
+
+     const btnHome = document.querySelector('.btn__home')
+     const btnProducts = document.querySelector('.btn__products')
+
+     const products = document.querySelector('.products')
+     const home = document.querySelector('.home')
+
+     btnHome.addEventListener('click', function(){
+        home.scrollIntoView()
+     })
+
+     btnProducts.addEventListener('click', function(){
+        products.scrollIntoView()
+     })
+
 }
 
